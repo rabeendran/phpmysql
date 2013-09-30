@@ -57,7 +57,7 @@ $text = "name = ".$_POST['name']. "\n"
 		."bugtype=".$_POST['bugtype']. "\n"
 		."description=".$_POST['description']. "\n"
 		."radio=".$_POST['radio']. "\n"
-		."checkbox=".$_POST['checkbox']. "\n"
+		."phone=".$_POST['phone']. "\n"
 		."file=".$_POST['file']. "\n"
 		."date=".$_POST['date']. "\n";
 
