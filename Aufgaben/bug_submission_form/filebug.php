@@ -50,16 +50,18 @@ var_dump($_POST);
 
 $empfaenger = "rajeevan@bluewin.ch";
 $betreff = "Formular";
-$text = $_POST['text'];
-$name = $_POST['name'];
-$email = $_POST['email'];
-$web = $_POST['web'];
-$priority = $_POST['priority'];
-$file = $_POST['file'];
+$text = "name = ".$_POST['name']. "\n"
+		."email=".$_POST['email']. "\n"
+		."web=".$_POST['web']. "\n"
+		."priority=".$_POST['priority']. "\n"
+		."bugtype=".$_POST['bugtype']. "\n"
+		."description=".$_POST['description']. "\n"
+		."radio=".$_POST['radio']. "\n"
+		."checkbox=".$_POST['checkbox']. "\n"
+		."file=".$_POST['file']. "\n"
+		."date=".$_POST['date']. "\n";
 
-
-
-mail($empfaenger, $betreff, $text, $name, $email, $web, $priority);
+mail($empfaenger, $betreff, $text);
 echo "Mail gesendet";
 
 
