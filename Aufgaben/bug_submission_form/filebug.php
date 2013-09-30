@@ -51,14 +51,15 @@ var_dump($_POST);
 $empfaenger = "rajeevan@bluewin.ch";
 $betreff = "Formular";
 $text = "name = ".$_POST['name']. "\n"
-		."email=".$_POST['email']. "\n"
+		."Email=".$_POST['Email']. "\n"
+		."phone=".$_POST['phone']. "\n"
 		."web=".$_POST['web']. "\n"
 		."priority=".$_POST['priority']. "\n"
-		."bugtype=".$_POST['bugtype']. "\n"
+		."myList=".$_POST['myList']. "\n"
 		."description=".$_POST['description']. "\n"
-		."radio=".$_POST['radio']. "\n"
-		."phone=".$_POST['phone']. "\n"
-		."file=".$_POST['file']. "\n"
+		."reproduzierbar=".$_POST['reproduzierbar']. "\n"
+		."erreichbar=".$_POST['erreichbar']. "\n"
+		."file=".$_FILES["file"]["name"]. "  Stored in: " . "/var/www/uploads/" . "\n"
 		."date=".$_POST['date']. "\n";
 
 mail($empfaenger, $betreff, $text);

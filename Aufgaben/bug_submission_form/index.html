@@ -39,9 +39,14 @@
 			<input type="email" name="Email" id="email" placeholder="mail@example.com" required/>
 			<label for="email">Email</label>
 		</p>
+
+		<p class="phone">
+			<input type="numbef" name="phone" id="phone" placeholder="044 111 11 11" required/>
+			<label for="phone">Telefonnummer</label>
+		</p>
 		
 		<p class="web">
-			<input type="url" name="web" id="web" placeholder="www.example.com" required/>
+			<input type="url" name="web" id="web" placeholder="http://	example.com" required/>
 			<label for="web">Betreffende Webseite</label>
 		</p>		
 	
@@ -52,7 +57,7 @@
 
 		 <p class ="bugtype">
 		 	<label>Bitte die Art des Bug Typ wählen</label>
-             <select id = "myList">
+             <select id = "myList" name ="myList">
                <option value = "1">Critcal</option>
                <option value = "2">Warnings</option>
                <option value = "3">Information</option>
@@ -65,20 +70,16 @@
 			<textarea name="description" placeholder="Fehlerreport" required/></textarea>
 		</p>
 
-	<p>
-             <input type = "radio"
-                 id = "reproduziebar"
-                 value = "reproduziebar" />
-             <label for = "reproduziebar">reproduziebar</label>
+	<p>	Ist der Fehler reproduzierbar: <br>
+			<input type="checkbox" name="reproduzierbar" value="ja"> Ja<br>
+			<input type="checkbox" name="reproduzierbar" value="nein"> Nein<br>
              </p>
 
 		<p>
-             <input type = "checkbox"
-                 id = "phone"
-                 value = "phone" 
-                 name = phone />
-             <label for = "phone">Rückruf</label>
-             </p>
+			Wie sind Sie erreichbar: <br>
+			<input type="radio" name="erreichbar" value="email" checked> email<br>
+			<input type="radio" name="erreichbar" value="telefon"> Telefon<br>
+			
 
 		<p>
 			<label for="file">Filename:</label>
