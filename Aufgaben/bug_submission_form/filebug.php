@@ -1,4 +1,11 @@
 <?php
+
+$alloweduser = "user";
+$allowedpass = "pass";
+
+if ($alloweduser === $_POST ['user']&&$allowedpass === $_POST['pass'])
+{
+
 $allowedExts = array("gif", "jpeg", "jpg", "png");
 $temp = explode(".", $_FILES["file"]["name"]);
 $extension = end($temp);
@@ -38,10 +45,6 @@ else
   {
   echo "No File added";
   }
-?>
-
-
-<?php
 
 var_dump($_POST);
 
@@ -52,8 +55,17 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 $web = $_POST['web'];
 $priority = $_POST['priority'];
+$file = $_POST['file'];
 
 
 
 mail($empfaenger, $betreff, $text, $name, $email, $web, $priority);
+echo "Mail gesendet";
+
+
+} else
+{
+	echo "user pw nicht korekt";
+}
+
 ?>

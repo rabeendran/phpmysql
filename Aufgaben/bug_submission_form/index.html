@@ -31,27 +31,27 @@
 	<form class="form" action="filebug.php" method="POST" enctype="multipart/form-data"  >
 		
 		<p class="name">
-			<input type="text" name="name" id="name" placeholder="John Doe"/>
+			<input type="text" name="name" id="name" placeholder="John Doe" required/>
 			<label for="name">Name</label>
 		</p>
 		
 		<p class="email">
-			<input type="text" name="Email" id="email" placeholder="mail@example.com" />
+			<input type="email" name="Email" id="email" placeholder="mail@example.com" required/>
 			<label for="email">Email</label>
 		</p>
 		
 		<p class="web">
-			<input type="text" name="web" id="web" placeholder="www.example.com" />
-			<label for="web">Betreffende Website</label>
+			<input type="url" name="web" id="web" placeholder="www.example.com" required/>
+			<label for="web">Betreffende Webseite</label>
 		</p>		
 	
 		<p class="priority">
-			<input type="number" name="priority" id="priority" placeholder="1-High, 2-Medium, 3-Low" min="1" max="3"/>
+			<input type="number" name="priority" id="priority" placeholder="1-High, 2-Medium, 3-Low" min="1" max="3" required/>
 			<label for="priority">Priority</label>
 		</p>
 
 		 <p class ="bugtype">
-		 	<label>Select the Bug Type</label>
+		 	<label>Bitte die Art des Bug Typ wählen</label>
              <select id = "myList">
                <option value = "1">Critcal</option>
                <option value = "2">Warnings</option>
@@ -62,7 +62,7 @@
        
 
 		<p class="text">
-			<textarea name="text" placeholder="Fehlerreport" /></textarea>
+			<textarea name="description" placeholder="Fehlerreport" required/></textarea>
 		</p>
 
 	<p>
@@ -84,10 +84,22 @@
 			<input type="file" name="file" id="file"><br>
 		
 		</p>
-		
+		<label for="file">Erledigen bis zu: </label>
+		<input type="date" name="date" required/>
+
+		</p>
+
+			<p class="user">
+			<input type="text" placeholder="Username eingeben" name="user"/>
+
+		</p>
+			<p class="pass">
+			<input type="password" placeholder="Passwort eingeben" name="pass"/>
+		</p>
+
 		<p class="submit">
 			<input type="submit" value="Senden" />
-		</p>
+		
 
 
 	</form>
