@@ -10,7 +10,8 @@ $empfaenger = "rajeevan@bluewin.ch";
 $betreff = "PHP ist toll 2";
 $text = "Hallo Jaime!
          Wenn du diese Nachricht empfängst
-         läuft mein SSMTp und PHP Script :-)";
+         läuft mein SSMTp und PHP Script :-)
+		 -----> Bitte antorte mir kurz";
 mail($empfaenger, $betreff, $text);
 ?>
 	</body>

@@ -1,5 +1,5 @@
 <?php
-class Post
+class Post extends CONTROLL
 {
         
         private $connection;
@@ -7,10 +7,8 @@ class Post
         private $vorname;
         private $alter;
         
-        function __construct() {
-                $this->connection = new PDO('mysql:host=localhost;dbname=loc_orm', 'loc_orm', '12341234');
-        }
-        
+           
+           
         public function findByID($id) {
                 $result = $this->connection->query("SELECT * FROM tbl_person WHERE id = ".$id)->fetch();
                 $this->setname($result["name"]);

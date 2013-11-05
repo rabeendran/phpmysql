@@ -1,0 +1,39 @@
+h1 {
+-webkit-box-shadow: 20px 20px 0px 5px rgba(0, 255, 54, 0.1); /* WebKit */
+-moz-box-shadow: 20px 20px 0px 5px rgba(0, 255, 54, 0.1); /* Firefox */
+box-shadow: 20px 20px 0px 5px rgba(0, 255, 54, 0.1); /* Standard */
+}
+
+button{
+.button {
+   border-top: 1px solid #f297f7;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#9c3e78), to(#65a9d7));
+   background: -webkit-linear-gradient(top, #9c3e78, #65a9d7);
+   background: -moz-linear-gradient(top, #9c3e78, #65a9d7);
+   background: -ms-linear-gradient(top, #9c3e78, #65a9d7);
+   background: -o-linear-gradient(top, #9c3e78, #65a9d7);
+   padding: 9.5px 19px;
+   -webkit-border-radius: 23px;
+   -moz-border-radius: 23px;
+   border-radius: 23px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 18px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border-top-color: #d62f9c;
+   background: #d62f9c;
+   color: #ccc;
+   }
+.button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+}
